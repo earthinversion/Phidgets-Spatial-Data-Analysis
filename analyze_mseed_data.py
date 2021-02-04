@@ -27,5 +27,4 @@ for method in ["weighted_average_slopes", "lanczos", "linear", "slinear", "cubic
     stream = read(os.path.join(mseeddata,f'{network}-{station}-{method}.mseed'), format="MSEED")
     ## Plot the stream
     stream.plot(outfile=os.path.join(figpath,f"{network}-{station}-{method}-ZXY.png"), linewidth=0.5, title = f"{method}")
-
     plt.close('all')
