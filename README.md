@@ -17,11 +17,11 @@ write it into mseed files using different interpolation algorithms; also plot th
 
 <p align="center">
     <img width="80%" src="figs/RFI-phidgetData-weighted_average_slopes-ZXY.png">
-    <p style="text-align: center; font-style: italic; font-size: smaller;">weighted_average_slopes</p>
+    <p align="center" style="text-align: center; font-style: italic; font-size: smaller;">weighted_average_slopes</p>
 </p>
 
 <p align="center">
     <img width="80%" src="figs/RFI-phidgetData-lanczos-ZXY.png">
-    <p style="text-align: center; font-style: italic; font-size: smaller;">lanczos</p>
+    <p align="center" style="text-align: center; font-style: italic; font-size: smaller;">lanczos</p>
 </p>
 
