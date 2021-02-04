@@ -1,0 +1,60 @@
+weighted_average_slopes          network: RF
+         station: phidg
+        location:
+         channel: X
+       starttime: 2021-01-29T07:28:49.684724Z
+         endtime: 2021-01-31T14:38:01.684724Z
+   sampling_rate: 40.0
+           delta: 0.025
+            npts: 7942081
+           calib: 1.0
+         _format: MSEED
+           mseed: AttribDict({'dataquality': 'D', 'number_of_records': 15759, 'encoding': 'FLOAT64', 'byteorder': '<', 'record_length': 4096, 'filesize': 193646592})
+lanczos          network: RF
+         station: phidg
+        location:
+         channel: X
+       starttime: 2021-01-29T07:28:49.684724Z
+         endtime: 2021-01-31T14:38:01.684724Z
+   sampling_rate: 40.0
+           delta: 0.025
+            npts: 7942081
+           calib: 1.0
+         _format: MSEED
+           mseed: AttribDict({'dataquality': 'D', 'number_of_records': 15759, 'encoding': 'FLOAT64', 'byteorder': '<', 'record_length': 4096, 'filesize': 193646592})
+linear          network: RF
+         station: phidg
+        location:
+         channel: X
+       starttime: 2021-01-29T07:28:49.684724Z
+         endtime: 2021-01-31T14:38:01.684724Z
+   sampling_rate: 40.0
+           delta: 0.025
+            npts: 7942081
+           calib: 1.0
+         _format: MSEED
+           mseed: AttribDict({'dataquality': 'D', 'number_of_records': 15759, 'encoding': 'FLOAT64', 'byteorder': '<', 'record_length': 4096, 'filesize': 193646592})
+slinear          network: RF
+         station: phidg
+        location:
+         channel: X
+       starttime: 2021-01-29T07:28:49.684724Z
+         endtime: 2021-01-31T14:38:01.684724Z
+   sampling_rate: 40.0
+           delta: 0.025
+            npts: 7942081
+           calib: 1.0
+         _format: MSEED
+           mseed: AttribDict({'dataquality': 'D', 'number_of_records': 15759, 'encoding': 'FLOAT64', 'byteorder': '<', 'record_length': 4096, 'filesize': 193646592})
+cubic          network: RF
+         station: phidg
+        location:
+         channel: X
+       starttime: 2021-01-29T07:28:49.684724Z
+         endtime: 2021-01-31T14:38:01.684724Z
+   sampling_rate: 40.0
+           delta: 0.025
+            npts: 7942081
+           calib: 1.0
+         _format: MSEED
+           mseed: AttribDict({'dataquality': 'D', 'number_of_records': 15759, 'encoding': 'FLOAT64', 'byteorder': '<', 'record_length': 4096, 'filesize': 193646592})

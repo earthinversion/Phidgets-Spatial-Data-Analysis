@@ -28,3 +28,4 @@ for method in ["weighted_average_slopes", "lanczos", "linear", "slinear", "cubic
     ## Plot the stream
     stream.plot(outfile=os.path.join(figpath,f"{network}-{station}-{method}-ZXY.png"), linewidth=0.5, title = f"{method}")
     plt.close('all')
+    print(method,stream[0].stats)
