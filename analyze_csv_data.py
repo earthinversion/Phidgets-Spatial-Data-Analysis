@@ -1,3 +1,10 @@
+# ======================================================================================================================================================
+# Title:  Reads the sequential csc files in the directory csvdata and 
+# write it into mseed files using different interpolation algorithms; also plot the three component recording from the csv file
+# Author: Utpal Kumar
+# Date:   04 Feb 2021
+# ======================================================================================================================================================
+
 import pandas as pd
 import os, glob
 import matplotlib.pyplot as plt
@@ -6,7 +13,9 @@ from obspy.core import UTCDateTime
 import time
 
 
-dataloc = "data/"
+dataloc = "csvdata/"
+figpath = "figs/"
+mseeddata = "mseeddata/"
 allDataFiles = glob.glob(dataloc+"*.csv")
 # allDataFiles = allDataFiles[0:2]
 print(allDataFiles)
@@ -70,7 +79,7 @@ for method in ["weighted_average_slopes", "lanczos", "linear", "slinear", "cubic
     else:
         st.interpolate(sampling_rate=40, method= method) 
 
-    st.write(f'{network}-{station}-{method}.mseed', format='MSEED', byteorder=-1) 
+    st.write(os.path.join(mseeddata,f'{network}-{station}-{method}.mseed'), format='MSEED', byteorder=-1) 
     print(f"Interpolation using {method} finished in {time.perf_counter()-interp_time_start:.5f}s")
 
 # Create figure and plot space
@@ -100,7 +109,7 @@ ax[3].set_ylabel("Time diff\n(in sec)")
 
 
 plt.xlabel("Time")
-plt.savefig(f"plot_all_data_{network}-{station}.png", bbox_inches='tight', dpi=300)
+plt.savefig(os.path.join(figpath,f"plot_all_data_{network}-{station}.png"), bbox_inches='tight', dpi=300)
 plt.close('all')
 
 # ## Plot the stream
